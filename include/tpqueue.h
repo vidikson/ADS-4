@@ -43,8 +43,7 @@ class TPQueue {
         arr[count - i] = arr[count - (i + 1)];
         arr[count - (i + 1)] = dub;
       }
-  } 
-  else {
+  } else {
     arr[end++] = item;
     count++;
   }
@@ -68,7 +67,7 @@ class TPQueue {
   bool isFull() const  {
     return count == size;
   }
-
+};
 struct SYM {
   char ch;
   int  prior;
